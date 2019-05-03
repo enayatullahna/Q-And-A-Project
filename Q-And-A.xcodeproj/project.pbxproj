@@ -15,6 +15,7 @@
 		E6B43C87227BDB2200AA1994 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43C86227BDB2200AA1994 /* QuestionController.swift */; };
 		E6B43C8B227BE13A00AA1994 /* QuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43C8A227BE13A00AA1994 /* QuestionsTableViewController.swift */; };
 		E6B43C8D227BE1DA00AA1994 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43C8C227BE1DA00AA1994 /* QuestionTableViewCell.swift */; };
+		E6B43C8F227BE51800AA1994 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B43C8E227BE51800AA1994 /* SubmitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		E6B43C86227BDB2200AA1994 /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 		E6B43C8A227BE13A00AA1994 /* QuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsTableViewController.swift; sourceTree = "<group>"; };
 		E6B43C8C227BE1DA00AA1994 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		E6B43C8E227BE51800AA1994 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				E6B43C86227BDB2200AA1994 /* QuestionController.swift */,
 				E6B43C8A227BE13A00AA1994 /* QuestionsTableViewController.swift */,
 				E6B43C8C227BE1DA00AA1994 /* QuestionTableViewCell.swift */,
+				E6B43C8E227BE51800AA1994 /* SubmitViewController.swift */,
 			);
 			path = "Q-And-A";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				E6B43C8D227BE1DA00AA1994 /* QuestionTableViewCell.swift in Sources */,
 				E6B43C8B227BE13A00AA1994 /* QuestionsTableViewController.swift in Sources */,
 				E6B43C73227BD77200AA1994 /* AppDelegate.swift in Sources */,
+				E6B43C8F227BE51800AA1994 /* SubmitViewController.swift in Sources */,
 				E6B43C87227BDB2200AA1994 /* QuestionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

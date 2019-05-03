@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -86,12 +87,58 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Q&amp;A" id="aZi-IC-uoT">
-                        <barButtonItem key="rightBarButtonItem" title="Ask Question" id="l6x-Ms-Mdv"/>
+                        <barButtonItem key="rightBarButtonItem" title="Ask Question" id="l6x-Ms-Mdv">
+                            <connections>
+                                <segue destination="FIe-BM-Anw" kind="show" id="Gcl-ds-4cc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Vi-qy-aYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="107.8125"/>
+            <point key="canvasLocation" x="771" y="108"/>
+        </scene>
+        <!--Submit View Controller-->
+        <scene sceneID="BlN-5c-pYd">
+            <objects>
+                <viewController id="FIe-BM-Anw" customClass="SubmitViewController" customModule="Q_And_A" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2GF-ih-Z64">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Nm-FX-Ihe">
+                                <rect key="frame" x="0.0" y="104" width="414" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4gH-ra-KRN">
+                                <rect key="frame" x="0.0" y="142" width="414" height="220"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4gH-ra-KRN" firstAttribute="leading" secondItem="xWc-X5-uxN" secondAttribute="leading" id="Qgl-T1-2F5"/>
+                            <constraint firstItem="6Nm-FX-Ihe" firstAttribute="leading" secondItem="xWc-X5-uxN" secondAttribute="leading" id="V0V-HC-FlL"/>
+                            <constraint firstItem="xWc-X5-uxN" firstAttribute="trailing" secondItem="4gH-ra-KRN" secondAttribute="trailing" id="cl5-2S-ksh"/>
+                            <constraint firstItem="xWc-X5-uxN" firstAttribute="trailing" secondItem="6Nm-FX-Ihe" secondAttribute="trailing" id="jdX-4b-c55"/>
+                            <constraint firstItem="4gH-ra-KRN" firstAttribute="top" secondItem="6Nm-FX-Ihe" secondAttribute="bottom" constant="8" id="nEG-Nb-XBP"/>
+                            <constraint firstItem="6Nm-FX-Ihe" firstAttribute="top" secondItem="xWc-X5-uxN" secondAttribute="top" constant="16" id="rJS-ZC-ElJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xWc-X5-uxN"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="6Nm-FX-Ihe" id="S1I-dG-vEz"/>
+                        <outlet property="textView" destination="4gH-ra-KRN" id="ubZ-Vv-Ga2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K1c-e4-rYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="f3P-kD-tcl">
